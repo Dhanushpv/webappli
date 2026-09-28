@@ -1,0 +1,31 @@
+<html>
+<head>Curd</head>
+<body>
+	<input type ="text" id= "name"/>
+	<br>
+	<input type ="button"  onClick="Create()" value ="Create" >
+	<input type ="button"  onClick="Show()" value ="Show">
+	<input type ="button"  onClick="Delete()" value ="Delete">
+	<br>
+	<p id = "para"></p>
+	<script>
+	
+		function Create(){
+			let name = document.getElementById("name").value;
+			document.data = "name =" +name; 
+			para.innerHTML = "Data created"	
+		}
+		
+		function Show(){
+			
+			para.innerHTML = document.data
+			
+		}
+
+		function Delete(){
+			document.data = "name=; max-age=0;path=/";
+			para.innerHTML = "Data Deleted"
+		}
+	</script>
+</body>
+</html>
